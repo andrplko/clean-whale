@@ -1,5 +1,0 @@
-<symbol fill="none" viewBox="0 0 25 25" id="icon-plus" xmlns="http://www.w3.org/2000/svg">
-  <rect width="25" height="25" rx="12.5" fill="#59B78B"/>
-  <path d="M12.5 18.314c-.642 0-1.163-.52-1.163-1.163V7.85a1.163 1.163 0 1 1 2.326 0v9.302c0 .642-.52 1.163-1.163 1.163Z" fill="#fff"/>
-  <path d="M7.849 13.663a1.163 1.163 0 1 1 0-2.326h9.302a1.163 1.163 0 0 1 0 2.326H7.85Z" fill="#fff"/>
-</symbol>
