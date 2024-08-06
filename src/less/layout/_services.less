@@ -1,0 +1,203 @@
+.services {
+  background: linear-gradient(
+    136deg,
+    rgba(199, 217, 224, 0.2) 0%,
+    rgba(157, 181, 191, 0.2) 100%
+  );
+
+  & .wrapper {
+    flex-direction: column;
+    padding: 58px 100px 74px;
+  }
+}
+
+.services__title {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 900;
+}
+
+.services__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin: 34px 0 57px 0;
+}
+
+.services__item {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+.services__item:not(:first-child):not(:nth-child(6)) {
+  flex-direction: column;
+}
+
+.services__item:not(:nth-child(1)):not(:nth-child(7)) {
+  & .services__item-image {
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+.services__item:first-child {
+  max-width: 1034px;
+  width: 100%;
+  padding: 30px 0 70px 65px;
+
+  & .price-calculator {
+    justify-content: flex-end;
+
+    & .price-calculator__form-group {
+      column-gap: 12px;
+    }
+
+    & .price-calculator__title {
+      white-space: nowrap;
+    }
+
+    & .rooms,
+    .bathrooms {
+      max-width: 210px;
+      width: 100%;
+    }
+
+    & .button {
+      max-width: 432px;
+      width: 100%;
+    }
+  }
+}
+
+.services__item:nth-child(2) {
+  max-width: 353px;
+}
+
+.services__item-title {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 900;
+}
+
+.services__item-description {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.services__item-link {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 11px 24px;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 900;
+  background-color: #FEEA84;
+  border-radius: 8px;
+}
+
+.item-1 {
+  & .services__item-image {
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
+.item-2 {
+  & .services__item-info {
+    padding: 35px 35px 0 35px;
+  }
+}
+
+.item-3 {
+  background: #FFFFFF url("../assets/images/sockets.png") no-repeat right bottom;
+  width: 458px;
+  height: 310px;
+  padding: 35px;
+}
+
+.item-4 {
+  background: #FFFFFF url("../assets/images/keys.png") no-repeat right bottom;
+  width: 458px;
+  height: 310px;
+  padding: 35px;
+}
+
+.item-5 {
+  background: #FFFFFF url("../assets/images/washing-machine.png") no-repeat right bottom;
+  width: 458px;
+  height: 310px;
+  padding: 35px;
+}
+
+.item-6 {
+  background: #FFFFFF url("../assets/images/couch.png") no-repeat right bottom;
+  width: 929px;
+  height: 310px;
+  padding: 35px;
+}
+
+.item-7 {
+  background: #FFFFFF url("../assets/images/car.png") no-repeat left bottom;
+  align-items: flex-end;
+  width: 458px;
+  height: 310px;
+  padding: 35px;
+
+  & .services__item-title {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.services__item:nth-child(7) {
+  & .services__item-image {
+    border-bottom-left-radius: 8px;
+  }
+}
+
+.services__item-options {
+  display: flex;
+  column-gap: 10px;
+}
+
+.services__item-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(151, 151, 151, 0.17);
+  border-radius: 8px;
+}
+
+.services__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+
+  & .svg-right-arrow {
+    width: 19px;
+    height: 16px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.svg-two-seater-sofa {
+  width: 80px;
+  height: 45px;
+}
+
+.svg-three-seater-sofa {
+  width: 73px;
+  height: 45px;
+}

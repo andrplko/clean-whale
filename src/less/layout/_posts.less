@@ -1,0 +1,162 @@
+.posts {
+  border-top: 1px solid rgba(151, 151, 151, 0.3);
+
+  & .wrapper {
+    flex-wrap: wrap;
+    padding: 45px 110px 56px 100px;
+  }
+}
+
+.posts__title {
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 900;
+}
+
+.posts__cards {
+  display: flex;
+  column-gap: 20px;
+}
+
+.posts__card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.card-1 {
+  & .posts__card-header {
+    background: url("../assets/images/shoes.png") no-repeat;
+  }
+}
+
+.card-2 {
+  & .posts__card-header {
+    background: url("../assets/images/shoes-with-cactus.png") no-repeat;
+  }
+}
+
+.card-3 {
+  & .posts__card-header {
+    background: url("../assets/images/military-boots.png") no-repeat;
+  }
+}
+
+.card-4 {
+  & .posts__card-header {
+    background: url("../assets/images/trainers.png") no-repeat;
+  }
+}
+
+.posts__card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 377px;
+  padding: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.posts__card-info {
+  flex: 1;
+  padding: 25px 30px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: linear-gradient(136deg, rgba(199, 217, 224, 0.2) 0%, rgba(157, 181, 191, 0.2) 100%);
+}
+
+.posts__card-title {
+  margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 900;
+}
+
+.posts__card-text {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+}
+
+.date-picker {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+  padding: 7px 11px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  height: fit-content;
+}
+
+.topics {
+  display: flex;
+  column-gap: 5px;
+  margin: 22px 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.topic {
+  padding: 13px 28px;
+  border: 1px solid rgba(151, 151, 151, 0.2);
+}
+
+.details {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 10px;
+}
+
+.details__location {
+  column-gap: 5px;
+}
+
+.details__topic,
+.details__location {
+  padding: 7px 14px;
+  background-color: #FEEA84;
+  border-radius: 4px;
+}
+
+.date-picker, 
+.details__topic,
+.details__location {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+} 
+
+.svg-telegram {
+  width: 26px;
+  height: 22px;
+}
+
+.svg-messenger {
+  width: 22px;
+  height: 22px;
+}
+
+.svg-instagram {
+  width: 22px;
+  height: 22px;
+}
+
+.svg-posts-location {
+  width: 12px;
+  height: 17px;
+}
+
+.svg-date-picker {
+  width: 16px;
+  height: 16px;
+}

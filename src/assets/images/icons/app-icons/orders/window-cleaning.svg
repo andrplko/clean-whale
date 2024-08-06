@@ -1,0 +1,10 @@
+<symbol fill="none" viewBox="0 0 30 30" id="icon-window-cleaning" xmlns="http://www.w3.org/2000/svg">
+  <path opacity=".01" fill="#000" d="M0 0h30v30H0z"/>
+  <path d="M29 27v2.514c0 .268-.238.486-.53.486H3.53c-.292 0-.53-.218-.53-.486V27h26Z" fill="#D3A584"/>
+  <path fill="#B28769" d="M3 27h26v2H3z"/>
+  <path d="M27 .523V27H5V.523C5 .234 5.238 0 5.53 0h20.94c.292 0 .53.234.53.523Z" fill="#D3A584"/>
+  <path fill="#B28769" d="M5 24h22v3H5z"/>
+  <path fill="#E5EEF0" d="M7 2h18v24H7z"/>
+  <path fill="#95B6BA" d="M7 24.336h18V26H7zM7 12h18v3.594H7z"/>
+  <path fill="#E5C2AA" d="M6.848 13h18.306v2.079H6.848zM29.464 29H2.536A.54.54 0 0 1 2 28.457v-2.265c0-.3.24-.543.536-.543h26.928a.54.54 0 0 1 .536.543v2.265c0 .3-.24.543-.536.543Z"/>
+</symbol>
