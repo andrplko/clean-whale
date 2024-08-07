@@ -47,8 +47,8 @@
             <path fill-rule="evenodd" clip-rule="evenodd" d="M.707 0C2.08.083 6.649.434 7.792 1.517a.663.663 0 0 1 .206.541C7.695 5.523 5.399 12.57 5.3 12.873a.666.666 0 0 1-.633.46h-4A.667.667 0 0 1 0 12.667v-12A.666.666 0 0 1 .707 0Zm.626 12H4.18c.496-1.566 2.095-6.754 2.448-9.674-.84-.408-3.152-.776-5.295-.945V12ZM23.074 2.729c.121-.056 3.025-1.396 8.26-1.396.368 0 .667.297.667.667v12a.667.667 0 0 1-.667.667h-4c-.3 0-.563-.2-.643-.49-.496-1.797-3.076-9.165-3.9-10.492a.672.672 0 0 1-.073-.541.663.663 0 0 1 .356-.415Zm4.759 10.604h2.835V2.674c-3.173.075-5.358.668-6.375 1.014 1.041 2.218 2.908 7.586 3.54 9.645Z" fill="#000"/>
           </g>
         </symbol> 
-        <symbol id="icon-date-picker" viewBox="0 0 14 14">
-          <g id="icon-date-picker">
+        <symbol id="icon-date-view" viewBox="0 0 14 14">
+          <g id="icon-date-view">
             <path d="M11.9 2.1h-.7V.7a.7.7 0 1 0-1.4 0v1.4H4.2V.7a.7.7 0 1 0-1.4 0v1.4h-.7A2.1 2.1 0 0 0 0 4.2v.7h14v-.7a2.1 2.1 0 0 0-2.1-2.1ZM0 11.9C0 13.06.94 14 2.1 14h9.8a2.1 2.1 0 0 0 2.1-2.1V6.3H0v5.6Z" fill="#000"/>
           </g>
         </symbol>
@@ -690,7 +690,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="wrapper header-wrapper">
+      <div class="wrapper">
         <a href="#" class="logo">
           <svg class="svg-logo">
             <use href="#icon-logo"></use>
@@ -782,7 +782,7 @@
                     <svg class="svg svg-house-clining">
                       <use href="#icon-house-cleaning"></use>
                     </svg>
-                    <span>Sprzątanie domu</span>
+                    <span class="welcome__navigation-text">Sprzątanie domu</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -790,7 +790,7 @@
                     <svg class="svg svg-window-cleaning">
                       <use href="#icon-window-cleaning"></use>
                     </svg>
-                    <span>Mycie okien</span>
+                    <span class="welcome__navigation-text">Mycie okien</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -798,7 +798,7 @@
                     <svg class="svg svg-electrician">
                       <use href="#icon-electrician"></use>
                     </svg>
-                    <span>Elektryk</span>
+                    <span class="welcome__navigation-text">Elektryk</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -806,7 +806,7 @@
                     <svg class="svg svg-handyman">
                       <use href="#icon-handyman"></use>
                     </svg>
-                    <span>Złota rączka</span>
+                    <span class="welcome__navigation-text">Złota rączka</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -814,7 +814,7 @@
                     <svg class="svg svg-plumber">
                       <use href="#icon-plumber"></use>
                     </svg>
-                    <span>Hydraulik</span>
+                    <span class="welcome__navigation-text">Hydraulik</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -822,7 +822,7 @@
                     <svg class="svg svg-flowers-delivery">
                       <use href="#icon-flowers-delivery"></use>
                     </svg>
-                    <span>Dostawa kwiatów</span>
+                    <span class="welcome__navigation-text">Dostawa kwiatów</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -830,7 +830,7 @@
                     <svg class="svg svg-design">
                       <use href="#icon-design"></use>
                     </svg>
-                    <span>Projektowanie</span>
+                    <span class="welcome__navigation-text">Projektowanie</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -838,7 +838,7 @@
                     <svg class="svg svg-renovation">
                       <use href="#icon-renovation"></use>
                     </svg>
-                    <span>Remont</span>
+                    <span class="welcome__navigation-text">Remont</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -847,7 +847,7 @@
                       <use href="#icon-transport-and-moving-services">
                       </use>
                     </svg>
-                    <span>Transport i przeprowadzki</span>
+                    <span class="welcome__navigation-text">Transport i przeprowadzki</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -855,7 +855,7 @@
                     <svg class="svg svg-painter">
                       <use href="#icon-painter"></use>
                     </svg>
-                    <span>Malarz</span>
+                    <span class="welcome__navigation-text">Malarz</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -864,7 +864,7 @@
                       <use href="#icon-furniture-and-cabinetry">
                       </use>
                     </svg>
-                    <span>Meble i zabudowa</span>
+                    <span class="welcome__navigation-text">Meble i zabudowa</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -873,7 +873,7 @@
                       <use href="#svg-installation-and-repair">
                       </use>
                     </svg>
-                    <span>Montaż i naprawa</span>
+                    <span class="welcome__navigation-text">Montaż i naprawa</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -882,7 +882,7 @@
                       <use href="#icon-training-and-languages">
                       </use>
                     </svg>
-                    <span>Szkolenia i języki obce</span>
+                    <span class="welcome__navigation-text">Szkolenia i języki obce</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -890,7 +890,7 @@
                     <svg class="svg svg-swimming-pool">
                       <use href="#icon-swimming-pool"></use>
                     </svg>
-                    <span>Basen</span>
+                    <span class="welcome__navigation-text">Basen</span>
                   </a>
                 </li>
                 <li class="welcome__navigation-item">
@@ -898,7 +898,7 @@
                     <svg class="svg svg-garden">
                       <use href="#icon-garden"></use>
                     </svg>
-                    <span>Ogród</span>
+                    <span class="welcome__navigation-text">Ogród</span>
                   </a>
                 </li>
               </ul>
@@ -1067,7 +1067,7 @@
               <svg class="svg-wallet">
                 <use href="#icon-wallet"></use>
               </svg>
-              <p class="advantages__title">Nie musisz szukać</p>
+              <h4 class="advantages__title">Nie musisz szukać</h4>
               <p class="advantages__text">
                 Wystarczy, że odpowiesz na kilka krótkich pytań, a odezwą się do
                 Ciebie zainteresowani specjaliści z Twojej okolicy.
@@ -1077,7 +1077,7 @@
               <svg class="svg-umbrella">
                 <use href="#icon-umbrella"></use>
               </svg>
-              <p class="advantages__title">Polecamy polecanych</p>
+              <h4 class="advantages__title">Polecamy polecanych</h4>
               <p class="advantages__text">
                 Szukasz kogoś z polecenia? Nasi użytkownicy codziennie dodają
                 opinie o wykonawcach ponad 200 usług.
@@ -1089,8 +1089,7 @@
               </svg>
               <p class="advantages__title">Polecamy polecanych</p>
               <p class="advantages__text">
-                Szukasz kogoś z polecenia? Nasi użytkownicy codziennie dodają
-                opinie o wykonawcach ponad 200 usług.
+                Wykonawcy skontaktują się z Tobą tego samego dnia! O ich wiadomościach poinformujemy Cię mailem lub SMSem.
               </p>
             </div>
           </div>
@@ -1211,9 +1210,9 @@
           <div class="posts__cards">
             <div class="posts__card card-1">
               <div class="posts__card-header">
-                <div class="date-picker">
-                  <svg class="svg-date-picker">
-                    <use href="#icon-date-picker"></use>
+                <div class="date-view">
+                  <svg class="svg-date-view">
+                    <use href="#icon-date-view"></use>
                   </svg>
                   <span>14 stycznia 2024</span>
                 </div>
@@ -1235,9 +1234,9 @@
             </div>
             <div class="posts__card card-2">
               <div class="posts__card-header">
-                <div class="date-picker">
-                  <svg class="svg-date-picker">
-                    <use href="#icon-date-picker"></use>
+                <div class="date-view">
+                  <svg class="svg-date-view">
+                    <use href="#icon-date-view"></use>
                   </svg>
                   <span>14 stycznia 2024</span>
                 </div>
@@ -1259,9 +1258,9 @@
             </div>
             <div class="posts__card card-3">
               <div class="posts__card-header">
-                <div class="date-picker">
-                  <svg class="svg-date-picker">
-                    <use href="#icon-date-picker"></use>
+                <div class="date-view">
+                  <svg class="svg-date-view">
+                    <use href="#icon-date-view"></use>
                   </svg>
                   <span>14 stycznia 2024</span>
                 </div>
@@ -1284,9 +1283,9 @@
             </div>
             <div class="posts__card card-4">
               <div class="posts__card-header">
-                <div class="date-picker">
-                  <svg class="svg-date-picker">
-                    <use href="#icon-date-picker"></use>
+                <div class="date-view">
+                  <svg class="svg-date-view">
+                    <use href="#icon-date-view"></use>
                   </svg>
                   <span>14 stycznia 2024</span>
                 </div>
@@ -1320,9 +1319,9 @@
                   <use href="#icon-nubuck-shoes"></use>
                 </svg>
               </div>
-              <div class="info">
-                <h4>Co to jest nubuk i jakie ma właściwości?️</h4>
-                <p>
+              <div class="advice__info">
+                <h4 class="advice__info-title">Co to jest nubuk i jakie ma właściwości?️</h4>
+                <p class="advice__info-text">
                   Nubuk co to znaczy? Jest to wyjątkowy materiał, który łączy
                   elegancję z trwałością. Wykonane z niego produkty cieszą się
                   dużą popularnością dzięki swoim wyjątkowym właściwościom.
@@ -1335,9 +1334,9 @@
                   <use href="#icon-suede-shoes"></use>
                 </svg>
               </div>
-              <div class="info">
-                <h4>Szczotka do czyszczenia zamszu - jak wybrać odpowiednią?️</h4>
-                <p>Pielęgnacja zamszowego obuwia wymaga odpowiednich narzędzi i regularnej konserwacji.</p>
+              <div class="advice__info">
+                <h4 class="advice__info-title">Szczotka do czyszczenia zamszu - jak wybrać odpowiednią?️</h4>
+                <p class="advice__info-text">Pielęgnacja zamszowego obuwia wymaga odpowiednich narzędzi i regularnej konserwacji.</p>
               </div>
             </div>
             <div class="advice__card">
@@ -1346,9 +1345,9 @@
                   <use href="#icon-high-heel-shoes"></use>
                 </svg>
               </div>
-              <div class="info">
-                <h4>Prawidła do rozciągania butów - które wybrać?️</h4>
-                <p>Prawidła do rozciągania butów są niezastąpionym narzędziem, które pomaga w dopasowaniu obuwia do stopy,
+              <div class="advice__info">
+                <h4 class="advice__info-title">Prawidła do rozciągania butów - które wybrać?️</h4>
+                <p class="advice__info-text">Prawidła do rozciągania butów są niezastąpionym narzędziem, które pomaga w dopasowaniu obuwia do stopy,
                   zapewniając komfort noszenia i przedłużając ich żywotność.</p>
               </div>
             </div>
@@ -1358,9 +1357,9 @@
                   <use href="#icon-sofa"></use>
                 </svg>
               </div>
-              <div class="info">
-                <h4>Jak wyprać kanapę w domu? Skuteczne rozwiązania️</h4>
-                <p>
+              <div class="advice__info">
+                <h4 class="advice__info-title">Jak wyprać kanapę w domu? Skuteczne rozwiązania️</h4>
+                <p class="advice__info-text">
                   Jak wyprać kanapę w domu? Niezależnie od tego, czy jest to mebel tapicerowany, czy skórzany, wymaga
                   odpowiednich metod i środków.
                 </p>
