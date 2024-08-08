@@ -2,8 +2,9 @@
   border-top: 1px solid rgba(151, 151, 151, 0.3);
 
   & .wrapper {
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 45px 110px 56px 100px;
+    padding: 45px 0 56px 100px;
   }
 }
 
@@ -13,15 +14,34 @@
   font-weight: 900;
 }
 
-.posts__cards {
+.posts__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.posts__cards  {
   display: flex;
   column-gap: 20px;
+}
+
+.slider-button-next {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .posts__card {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  min-width: 400px;
+  max-width: 400px;
 }
 
 .card-1 {
@@ -46,6 +66,18 @@
   & .posts__card-header {
     background: url('../assets/images/trainers.png') no-repeat;
   }
+}
+
+.subscribe-us {
+  margin-top: 10px;
+}
+
+.subscribe-us__text {
+  font-size: 12px;
+}
+
+.subscribe-us__text_bold {
+  font-weight: 900;
 }
 
 .posts__card-header {
@@ -100,6 +132,16 @@
   align-items: center;
   column-gap: 20px;
   height: fit-content;
+  margin-right: 100px;
+}
+
+.social-services {
+  display: flex;
+  column-gap: 10px;
+}
+
+.social-services__link {
+  display: block;
 }
 
 .topics {
@@ -113,6 +155,7 @@
 .topic {
   padding: 13px 28px;
   border: 1px solid rgba(151, 151, 151, 0.2);
+  border-radius: @border-radius-small;
 }
 
 .details {
@@ -162,4 +205,9 @@
 .svg-date-view {
   width: 16px;
   height: 16px;
+}
+
+.svg-slider-arrow {
+  width: 24px;
+  height: 13px;
 }

@@ -26,26 +26,23 @@
 
 .services__item {
   display: flex;
-  background-color: #ffffff;
-  border-radius: 6px;
+  width: 100%;
+  border-radius: @border-radius-small;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+.services__item:not(:first-child) {
+  padding: 35px;
 }
 
 .services__item:not(:first-child):not(:nth-child(6)) {
   flex-direction: column;
 }
 
-.services__item:not(:nth-child(1)):not(:nth-child(7)) {
-  & .services__item-image {
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-}
-
-.services__item:first-child {
-  max-width: 1034px;
-  width: 100%;
-  padding: 30px 0 70px 65px;
+.item-1 {
+  background: #ffffff url('../assets/images/sprayer.png') no-repeat right 30px;
+  width: 1035px;
+  padding: 70px;
 
   & .price-calculator {
     justify-content: flex-end;
@@ -54,15 +51,11 @@
       column-gap: 12px;
     }
 
-    & .price-calculator__title {
-      white-space: nowrap;
-    }
-
     & .rooms,
-    .bathrooms {
-      max-width: 210px;
-      width: 100%;
-    }
+      .bathrooms {
+        max-width: 210px;
+        width: 100%;
+      }
 
     & .button {
       max-width: 432px;
@@ -71,75 +64,34 @@
   }
 }
 
-.services__item:nth-child(2) {
-  max-width: 353px;
-}
-
-.services__item-title {
-  font-size: 22px;
-  line-height: 32px;
-  font-weight: 900;
-}
-
-.services__item-description {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 600;
-}
-
-.services__item-link {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  padding: 11px 24px;
-  margin-top: 10px;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 900;
-  background-color: #FEEA84;
-  border-radius: 8px;
-}
-
-.item-1 {
-  & .services__item-image {
-    width: fit-content;
-    height: fit-content;
-  }
-}
-
 .item-2 {
-  & .services__item-info {
-    padding: 35px 35px 0 35px;
-  }
+  background: #ffffff url('../assets/images/vacuum-cleaner.png') no-repeat bottom center;
+  width: 352px;
+  height: 514px;
 }
 
 .item-3 {
   background: #ffffff url('../assets/images/sockets.png') no-repeat right bottom;
   width: 458px;
   height: 310px;
-  padding: 35px;
 }
 
 .item-4 {
   background: #ffffff url('../assets/images/keys.png') no-repeat right bottom;
   width: 458px;
   height: 310px;
-  padding: 35px;
 }
 
 .item-5 {
-  background: #ffffff url('../assets/images/washing-machine.png') no-repeat
-    right bottom;
+  background: #ffffff url('../assets/images/washing-machine.png') no-repeat right bottom;
   width: 458px;
   height: 310px;
-  padding: 35px;
 }
 
 .item-6 {
   background: #ffffff url('../assets/images/couch.png') no-repeat right bottom;
   width: 929px;
   height: 310px;
-  padding: 35px;
 }
 
 .item-7 {
@@ -147,23 +99,53 @@
   align-items: flex-end;
   width: 458px;
   height: 310px;
-  padding: 35px;
-
-  & .services__item-title {
-    text-align: left;
-    width: 100%;
-  }
 }
 
-.services__item:nth-child(7) {
-  & .services__item-image {
-    border-bottom-left-radius: 8px;
-  }
+.services__item-info {
+  width: 100%;
+}
+
+.services__item-title {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.services__item-description {
+  max-width: 287px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.services__item-link {
+  margin-top: 10px;
+}
+
+.option-text {
+  margin: 12px 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.services__item-link,
+.option-link {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 28px;
+  background-color: #FEEA84;
+  border-radius: @border-radius-medium;
 }
 
 .services__item-options {
   display: flex;
   column-gap: 10px;
+  margin-top: 20px;
 }
 
 .services__item-option {
@@ -173,7 +155,7 @@
   align-items: center;
   padding: 20px;
   border: 1px solid rgba(151, 151, 151, 0.17);
-  border-radius: 8px;
+  border-radius: @border-radius-medium;
 }
 
 .services__link {
@@ -183,8 +165,8 @@
   column-gap: 16px;
   color: rgba(0, 0, 0, 0.6);
   font-size: 24px;
-  line-height: 34px;
   font-weight: 700;
+  line-height: 34px;
 
   & .svg-arrow-bold {
     width: 19px;

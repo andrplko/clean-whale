@@ -19,20 +19,44 @@
 
 .advice__cards {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 19px;
   margin: 35px 0 47px 0;
 }
 
 .advice__card {
   display: flex;
-  max-width: 450px;
+  column-gap: 27px;
+  min-height: 250px;
+  max-height: 250px;
+  max-width: 454px;
   width: 100%;
-  padding: 26px;
+  padding: 30px;
   background-color: #ffffff;
-  border-radius: 6px;
+  border-radius: @border-radius-small;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.06);
-  opacity: 1;
+}
+
+.advice__image {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.advice__info-title {
+  max-width: 245px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 900;
+}
+
+.advice__info-text {
+  max-width: 231px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 .advice__link {

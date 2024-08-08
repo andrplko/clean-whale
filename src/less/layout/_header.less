@@ -1,46 +1,30 @@
 .header {
-  padding: 14px 0 22px 0;
+  padding: 14px 0 22px;
   border-bottom: 1px solid @color-border-transparent;
+  white-space: nowrap;
+
+  & .wrapper {
+    align-items: center;
+  }
 }
 
-.header-wrapper {
+.header__navigation {
+  display: flex;
+  margin-left: 70px;
+}
+
+.header__navigation-list {
+  display: flex;
   align-items: center;
+  column-gap: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.svg-logo {
-  width: 115px;
-  height: 67px;
-}
-
-.svg-dropdown-arrow {
-  width: 10px;
-  height: 6px;
-}
-
-.svg-discount {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
-.svg-contractor {
-  width: 32px;
-  height: 20px;
-}
-
-.svg-header-location {
-  width: 15px;
-  height: 20px;
-}
-
-.svg-language {
-  width: 20px;
-  height: 18px;
-}
-
-.svg-profile {
-  width: 20px;
-  height: 20px;
+.header__controls {
+  display: flex;
+  column-gap: 5px;
+  margin-left: 42px;
 }
 
 .discounts {
@@ -88,22 +72,38 @@
   white-space: nowrap;
 }
 
-.header__navigation {
-  display: flex;
-  align-items: center;
-  margin-left: 70px;
+.svg-logo {
+  width: 115px;
+  height: 67px;
 }
 
-.header__controls {
-  display: flex;
-  column-gap: 5px;
-  margin-left: 42px;
+.svg-dropdown-arrow {
+  width: 10px;
+  height: 6px;
 }
 
-.header__navigation-list {
-  display: flex;
-  column-gap: 20px;
-  font-family: 'Nunito Sans';
-  font-size: 18px;
-  font-weight: 400;
+.svg-discount {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.svg-contractor {
+  width: 32px;
+  height: 20px;
+}
+
+.svg-header-location {
+  width: 15px;
+  height: 20px;
+}
+
+.svg-language {
+  width: 20px;
+  height: 18px;
+}
+
+.svg-profile {
+  width: 20px;
+  height: 20px;
 }

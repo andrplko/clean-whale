@@ -1,21 +1,31 @@
 .footer {
   & .wrapper {
     flex-direction: column;
-    margin-top: 110px;
+    padding: 110px 70px 0 100px;
   }
 }
 
 .footer__content {
   display: flex;
+  justify-content: space-between;
   align-items: flex-end;
   margin-top: 170px;
 }
 
-.city-link {
-  color: #2457c6;
+.main-info {
+  flex: 1;
+}
+
+.cities-list {
+  max-width: 746px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.city-link {
+  color: @color-primary;
+  font-weight: 900;
   text-decoration: underline;
 }
 
@@ -25,25 +35,24 @@
 
 .footer__navigation-menu {
   display: flex;
+  column-gap: 60px;
   white-space: nowrap;
-}
-
-.footer__navigation-item {
-  margin-right: 60px;
 }
 
 .footer__navigation-services {
   display: flex;
+  column-gap: 34px;
 }
 
 .footer__navigation-title {
-  text-transform: uppercase;
+  margin-bottom: 5px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
-.footer__navigation-link {
+.footer__navigation-column {
   font-size: 14px;
   line-height: 26px;
 }
@@ -56,6 +65,12 @@
   font-weight: 900;
 }
 
+.copyright {
+  margin: 25px 0 13px 0;
+  font-size: 11px;
+  font-weight: 600;
+}
+
 .payments {
   display: flex;
   align-items: center;
@@ -63,25 +78,19 @@
   margin-bottom: 20px;
 }
 
-.copyright {
-  margin: 25px 0 13px 0;
-  font-size: 11px;
-  font-weight: 600;
-}
-
-.main-info {
-  flex: 1;
-}
-
 .platform-partners {
   background: url('../assets/images/platform-partners.png') no-repeat;
   display: flex;
   flex-direction: column;
-  flex: 1;
   width: 592px;
   height: 401px;
   padding-left: 87px;
   padding-top: 145px;
+}
+
+.platform-partners__title,
+.platform-partners__text {
+  max-width: 230px;
 }
 
 .platform-partners__title {
@@ -91,8 +100,9 @@
 }
 
 .platform-partners__text {
+  margin: 10px 0;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 26px;
 }
 
 .platform-partners__link {
@@ -103,12 +113,13 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 900;
-  background-color: #2457c6;
-  border-radius: 8px;
+  background-color: @color-primary;
+  border-radius: @border-radius-medium;
   text-transform: uppercase;
 }
 
 .svg-footer-logo {
+  margin-bottom: 20px;
   width: 144px;
   height: 60px;
 }
