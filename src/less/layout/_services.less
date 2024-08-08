@@ -1,0 +1,186 @@
+.services {
+  background: linear-gradient(
+    136deg,
+    rgba(199, 217, 224, 0.2) 0%,
+    rgba(157, 181, 191, 0.2) 100%
+  );
+
+  & .wrapper {
+    flex-direction: column;
+    padding: 58px 100px 74px;
+  }
+}
+
+.services__title {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 900;
+}
+
+.services__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin: 34px 0 57px 0;
+}
+
+.services__item {
+  display: flex;
+  width: 100%;
+  border-radius: @border-radius-small;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.06);
+}
+
+.services__item:not(:first-child) {
+  padding: 35px;
+}
+
+.services__item:not(:first-child):not(:nth-child(6)) {
+  flex-direction: column;
+}
+
+.item-1 {
+  background: #ffffff url('../assets/images/sprayer.png') no-repeat right 30px;
+  width: 1035px;
+  padding: 70px;
+
+  & .price-calculator {
+    justify-content: flex-end;
+
+    & .price-calculator__form-group {
+      column-gap: 12px;
+    }
+
+    & .rooms,
+      .bathrooms {
+        max-width: 210px;
+        width: 100%;
+      }
+
+    & .button {
+      max-width: 432px;
+      width: 100%;
+    }
+  }
+}
+
+.item-2 {
+  background: #ffffff url('../assets/images/vacuum-cleaner.png') no-repeat bottom center;
+  width: 352px;
+  height: 514px;
+}
+
+.item-3 {
+  background: #ffffff url('../assets/images/sockets.png') no-repeat right bottom;
+  width: 458px;
+  height: 310px;
+}
+
+.item-4 {
+  background: #ffffff url('../assets/images/keys.png') no-repeat right bottom;
+  width: 458px;
+  height: 310px;
+}
+
+.item-5 {
+  background: #ffffff url('../assets/images/washing-machine.png') no-repeat right bottom;
+  width: 458px;
+  height: 310px;
+}
+
+.item-6 {
+  background: #ffffff url('../assets/images/couch.png') no-repeat right bottom;
+  width: 929px;
+  height: 310px;
+}
+
+.item-7 {
+  background: #ffffff url('../assets/images/car.png') no-repeat left bottom;
+  align-items: flex-end;
+  width: 458px;
+  height: 310px;
+}
+
+.services__item-info {
+  width: 100%;
+}
+
+.services__item-title {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.services__item-description {
+  max-width: 287px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.services__item-link {
+  margin-top: 10px;
+}
+
+.option-text {
+  margin: 12px 0;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.services__item-link,
+.option-link {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 28px;
+  background-color: #FEEA84;
+  border-radius: @border-radius-medium;
+}
+
+.services__item-options {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.services__item-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(151, 151, 151, 0.17);
+  border-radius: @border-radius-medium;
+}
+
+.services__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+
+  & .svg-arrow-bold {
+    width: 19px;
+    height: 16px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.svg-two-seater-sofa {
+  width: 80px;
+  height: 45px;
+}
+
+.svg-three-seater-sofa {
+  width: 73px;
+  height: 45px;
+}

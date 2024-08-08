@@ -1,0 +1,149 @@
+.description {
+  & .wrapper {
+    padding: 60px 100px 50px;
+    flex-direction: column;
+  }
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  padding: 26px 52px;
+}
+
+.advantages__item:not(:last-child) {
+  border-right: 1px solid rgba(151, 151, 151, 0.2);
+}
+
+.advantages__item-info {
+  flex: 1;
+}
+
+.advantages__title {
+  margin: 10px 0;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 38px;
+}
+
+.advantages__text {
+  max-width: 354px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.application {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-height: 361px;
+  padding: 0 60px 0 100px;
+  margin-top: 210px;
+  background: linear-gradient(
+    136deg,
+    rgba(199, 217, 224, 0.2) 0%,
+    rgba(157, 181, 191, 0.2) 100%
+  );
+  border-radius: @border-radius-medium;
+}
+
+.application__content-title {
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: 900;
+}
+
+.application__content-text {
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.application__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 17px;
+  padding: 16px 55px;
+  border-radius: @border-radius-medium;
+  background-color: @color-primary;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.links-to-download {
+  display: flex;
+  column-gap: 10px;
+  margin: 26px 0 86px;
+}
+
+.mobile-screens {
+  background: url('../assets/images/mobile-screens.png') no-repeat;
+  width: 449px;
+  height: 510px;
+}
+
+.description__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin-top: 90px;
+}
+
+.description__main-title {
+  max-width: 770px;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 45px;
+}
+
+.description__extra-title {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 36px;
+}
+
+.description__text {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.svg-wallet {
+  flex: 1;
+  width: 116px;
+  height: 116px;
+}
+
+.svg-umbrella {
+  flex: 1;
+  width: 108px;
+  height: 110px;
+}
+
+.svg-coins {
+  flex: 1;
+  width: 112px;
+  height: 100px;
+}
+
+.svg-apple-store {
+  width: 25px;
+  height: 31px;
+}
+
+.svg-google-play {
+  width: 27px;
+  height: 30px;
+}

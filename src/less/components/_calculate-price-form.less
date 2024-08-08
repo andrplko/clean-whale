@@ -1,0 +1,66 @@
+.price-calculator {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-calculator__title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 900;
+}
+
+.price-calculator__description {
+  text-align: center;
+  margin: 8px 0 25px 0;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+}
+
+.price-calculator__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 14px;
+
+  & .button {
+    max-width: 593px;
+    width: 100%;
+    padding: 24px 0;
+    color: #ffffff;
+  }
+}
+
+.price-calculator__form-group {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  width: 100%;
+}
+
+.rooms,
+.bathrooms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 288px;
+  width: 100%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: @border-radius-small;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 900;
+}
+
+.minus,
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  line-height: 31px;
+  font-weight: 900;
+}
