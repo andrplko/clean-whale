@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="icon" href="assets/images/icons/favicons/favicon.svg">
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900"
       rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900"
       rel="stylesheet">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <defs>
@@ -38,6 +38,11 @@
         <symbol id="icon-arrow-small" viewBox="0 0 17 9">
           <g id="icon-arrow-small-group">
             <path d="M.775 5.245h13.008l-2.437 2.461c-.7.707.35 1.768 1.05 1.06l2.22-2.244 1.481-1.499a.753.753 0 0 0 0-1.054l-3.7-3.743A.737.737 0 0 0 11.86 0c-.667 0-.994.82-.514 1.287l2.443 2.461H.737C-.29 3.8-.213 5.297.775 5.245Z" fill="currentColor"/>
+          </g>
+        </symbol>
+        <symbol id="icon-slider-arrow" viewBox="0 0 24 13">
+          <g id="icon-slider-arrow-group">
+            <path d="M1.12 7.576h18.789l-3.52 3.556c-1.011 1.02.505 2.552 1.517 1.531L21.11 9.42l2.14-2.164a1.088 1.088 0 0 0 0-1.524L17.905.327A1.064 1.064 0 0 0 17.131 0c-.963 0-1.436 1.184-.742 1.859l3.528 3.555H1.065c-1.483.074-1.373 2.237.055 2.162Z" fill="#000"/>
           </g>
         </symbol>        
         <symbol id="icon-contractor" viewBox="0 0 32 20">
@@ -728,49 +733,51 @@
                 <span>Zostań wykonawcą</span>
               </a>
             </li>
+            <li class="header__navigation-item">
+              <div class="header__controls">
+                <div class="location">
+                  <svg class="svg-header-location">
+                    <use href="#icon-header-location"></use>
+                  </svg>
+                  <span class="location__text">Warszawa</span>
+                  <svg class="svg-dropdown-arrow">
+                    <use href="#icon-dropdown-arrow"></use>
+                  </svg>
+                </div>
+                <div class="language">
+                  <svg class="svg-language">
+                    <use href="#icon-language"></use>
+                  </svg>
+                  <span class="language__text">Polski</span>
+                  <svg class="svg-dropdown-arrow">
+                    <use href="#icon-dropdown-arrow"></use>
+                  </svg>
+                </div>
+                <a href="#" class="profile">
+                  <svg class="svg-profile">
+                    <use href="#icon-profile"></use>
+                  </svg>
+                  <span class="profile__text">Konto osobiste</span>
+                </a>
+              </div>
+            </li>
           </ul>
         </nav>
-        <div class="header__controls">
-          <div class="location">
-            <svg class="svg-header-location">
-              <use href="#icon-header-location"></use>
-            </svg>
-            <span class="location__text">Warszawa</span>
-            <svg class="svg-dropdown-arrow">
-              <use href="#icon-dropdown-arrow"></use>
-            </svg>
-          </div>
-          <div class="language">
-            <svg class="svg-language">
-              <use href="#icon-language"></use>
-            </svg>
-            <span class="language__text">Polski</span>
-            <svg class="svg-dropdown-arrow">
-              <use href="#icon-dropdown-arrow"></use>
-            </svg>
-          </div>
-          <div class="profile">
-            <svg class="svg-profile">
-              <use href="#icon-profile"></use>
-            </svg>
-            <span class="profile__text">Konto osobiste</span>
-          </div>
-        </div>
       </div>
     </header>
     <main class="main">
       <section class="section welcome">
         <div class="wrapper">
           <div class="content">
-            <h2 class="welcome__title">
-              CleanWhale - Twój <a href="#" class="link">pomocnik domowy</a>
-            </h2>
+            <h1 class="welcome__title">
+              CleanWhale - Twój <a href="#" class="welcome__title-link">pomocnik domowy</a>
+            </h1>
             <p class="welcome__text">
               Nasi specjaliści mają przy sobie wszystkie niezbędne narzędzia do
               sprzątania mieszkania i mycia okien
             </p>
             <div class="search-container">
-              <input type="text" placeholder="Wyszukaj usługę, której potrzebujesz..." class="search" />
+              <input type="text" placeholder="Wyszukaj usługę, której potrzebujesz..." class="search">
               <svg class="svg-search">
                 <use href="#icon-search"></use>
               </svg>
@@ -907,7 +914,9 @@
               <svg class="svg-plus">
                 <use href="#icon-plus"></use>
               </svg>
-              <span>Nie ma odpowiedniej kategorii? <span>Napisz do nas, a my dodamy Twoją usługę</span></span>
+              <span class="welcome__link-text">Nie ma odpowiedniej kategorii? 
+                <span class="welcome__link-text_bold">Napisz do nas, a my dodamy Twoją usługę</span>
+              </span>
             </a>
           </div>
           <div class="review">
@@ -918,18 +927,19 @@
                   <use href="#icon-star"></use>
                 </svg>
               </div>
-              <p class="report__text">średnia ocena&#10;za 128 000 zamówień</p>
-              <a href="#" class="report-link">
-                <span class="report-text">Zobacz raport online</span>
+              <p class="report__text">średnia ocena</p>
+              <p class="report__text">za 128 000 zamówień</p>
+              <a href="#" class="report__link">
+                <span class="report__link-text">Zobacz raport online</span>
                 <svg class="svg-arrow-small">
                   <use href="#icon-arrow-small"></use>
                 </svg>
               </a>
             </div>
             <div class="review__user">
-              <img src="assets/images/icons/app-icons/user.svg" alt="User" />
+              <img src="assets/images/user.png" alt="User">
               <p class="review__user-text">
-                Dariusz ocenił Krzysztofa - za wykonanie usługi
+                Dariusz ocenił <span class="worker-name">Krzysztofa</span> - za wykonanie usługi
                 <a href="#" class="review__user-link">Montaż mebli</a>
               </p>
               <div class="buttons">
@@ -954,7 +964,7 @@
             Najpopularniejsze usługi na CleanWhale
           </h2>
           <div class="services__items">
-            <div class="services__item  item-1">
+            <div class="services__item item-1">
               <div class="price-calculator">
                 <h3 class="price-calculator__title">
                   Sprzątanie mieszkań Warszawa
@@ -984,7 +994,6 @@
                   <button class="button">Policz koszty na sprzątanie</button>
                 </form>
               </div>
-              <img src="assets/images/sprayer.png" alt="" class="services__item-image">
             </div>
             <div class="services__item item-2">
               <div class="services__item-info">
@@ -992,30 +1001,35 @@
                 <p class="services__item-description">
                   Efektywne i szybkie zakończenie remontu w Twoim mieszkaniu
                 </p>
-                <a href="#" class="services__item-link">od 5.60 zł/m2</a>
               </div>
-              <img src="assets/images/vacuum-cleaner.png" alt="" class="services__item-image">
+              <a href="#" class="services__item-link">od 5.60 zł/m2</a>
             </div>
             <div class="services__item item-3">
-              <h4 class="services__item-title">
-                Instalacja gniazdek elektrycznych
-              </h4>
-              <p class="services__item-description">I inne prace elektryczne</p>
+              <div class="services__item-info">
+                <h4 class="services__item-title">
+                  Instalacja gniazdek elektrycznych
+                </h4>
+                <p class="services__item-description">I inne prace elektryczne</p>
+              </div>
               <a href="#" class="services__item-link">od 19.90 zł</a>
             </div>
             <div class="services__item item-4">
-              <h4 class="services__item-title">
-                Naprawa i instalacja zamków
-              </h4>
-              <p class="services__item-description">Przyjazd dzień w dzień, zniżki dla stałych klientów</p>
+              <div class="services__item-info">
+                <h4 class="services__item-title">
+                  Naprawa i instalacja zamków
+                </h4>
+                <p class="services__item-description">Przyjazd dzień w dzień, zniżki dla stałych klientów</p>
+              </div>
               <a href="#" class="services__item-link">od 59.90 zł</a>
             </div>
             <div class="services__item item-5">
-              <h4 class="services__item-title">Podłączanie pralek</h4>
-              <p class="services__item-description">
-                Podłączanie pralek do kanalizacji i sieci elektrycznej,
-                testowanie usterek
-              </p>
+              <div class="services__item-info">
+                <h4 class="services__item-title">Podłączanie pralek</h4>
+                <p class="services__item-description">
+                  Podłączanie pralek do kanalizacji i sieci elektrycznej,
+                  testowanie usterek
+                </p>
+              </div>
               <a href="#" class="services__item-link">od 159.90 zł</a>
             </div>
             <div class="services__item item-6">
@@ -1028,27 +1042,29 @@
                     <svg class="svg-two-seater-sofa">
                       <use href="#icon-two-seater-sofa"></use>
                     </svg>
-                    <p>Pranie kanapy dwuosobowej</p>
-                    <a href="#" class="services__item-link">od 114.80 zł</a>
+                    <p class="option-text">Pranie kanapy dwuosobowej</p>
+                    <a href="#" class="option-link">od 114.80 zł</a>
                   </div>
                   <div class="services__item-option">
                     <svg class="svg-three-seater-sofa">
                       <use href="#icon-three-seater-sofa"></use>
                     </svg>
-                    <p>Pranie kanapy trzyosobowej</p>
-                    <a href="#" class="services__item-link">od 131.20 zł</a>
+                    <p class="option-text">Pranie kanapy trzyosobowej</p>
+                    <a href="#" class="option-link">od 131.20 zł</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="services__item item-7">
-              <h4 class="services__item-title">
-                Mycie i sprzątanie samochodu
-              </h4>
-              <p class="services__item-description">
-                Czyszczenie wnętrza, mycie okien, czyszczenie reflektorów,
-                detailing
-              </p>
+              <div class="services__item-info">
+                <h4 class="services__item-title">
+                  Mycie i sprzątanie samochodu
+                </h4>
+                <p class="services__item-description">
+                  Czyszczenie wnętrza, mycie okien, czyszczenie reflektorów,
+                  detailing
+                </p>
+              </div>
               <a href="#" class="services__item-link">od 159.90 zł</a>
             </div>
           </div>
@@ -1067,53 +1083,61 @@
               <svg class="svg-wallet">
                 <use href="#icon-wallet"></use>
               </svg>
-              <h4 class="advantages__title">Nie musisz szukać</h4>
-              <p class="advantages__text">
-                Wystarczy, że odpowiesz na kilka krótkich pytań, a odezwą się do
-                Ciebie zainteresowani specjaliści z Twojej okolicy.
-              </p>
+              <div class="advantages__item-info">
+                <h4 class="advantages__title">Nie musisz szukać</h4>
+                <p class="advantages__text">
+                  Wystarczy, że odpowiesz na kilka krótkich pytań, a odezwą się do
+                  Ciebie zainteresowani specjaliści z Twojej okolicy.
+                </p>
+              </div>
             </div>
             <div class="advantages__item">
               <svg class="svg-umbrella">
                 <use href="#icon-umbrella"></use>
               </svg>
-              <h4 class="advantages__title">Polecamy polecanych</h4>
-              <p class="advantages__text">
-                Szukasz kogoś z polecenia? Nasi użytkownicy codziennie dodają
-                opinie o wykonawcach ponad 200 usług.
-              </p>
+              <div class="advantages__item-info">
+                <h4 class="advantages__title">Polecamy polecanych</h4>
+                <p class="advantages__text">
+                  Szukasz kogoś z polecenia? Nasi użytkownicy codziennie dodają
+                  opinie o wykonawcach ponad 200 usług.
+                </p>
+              </div>
             </div>
             <div class="advantages__item">
               <svg class="svg-coins">
                 <use href="#icon-coins"></use>
               </svg>
-              <p class="advantages__title">Polecamy polecanych</p>
-              <p class="advantages__text">
-                Wykonawcy skontaktują się z Tobą tego samego dnia! O ich wiadomościach poinformujemy Cię mailem lub SMSem.
-              </p>
+              <div class="advantages__item-info">
+                <h4 class="advantages__title">Cenimy Twój czas</h4>
+                <p class="advantages__text">
+                  Wykonawcy skontaktują się z Tobą tego samego dnia! O ich wiadomościach poinformujemy Cię mailem lub SMSem.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="application">
+          <article class="application">
             <div class="application__content">
               <p class="application__content-text">Potrzebujesz pomocy wykonawcy?</p>
               <h3 class="application__content-title">Pobierz aplikację mobilną CleanWhale</h3>
               <div class="links-to-download">
                 <a href="#" class="application__link">
-                  <svg class="svg-apple-store">
-                    <use href="#icon-apple-store"></use>
-                  </svg>
-                  <span>Pobierz z App Store</span>
+                  <div>
+                    <svg class="svg-apple-store">
+                      <use href="#icon-apple-store"></use>
+                    </svg>
+                  </div>
+                  <span class="application__link-text">Pobierz z App Store</span>
                 </a>
                 <a href="#" class="application__link">
                   <svg class="svg-google-play">
                     <use href="#icon-google-play"></use>
                   </svg>
-                  <span>Pobierz z Google Play</span>
+                  <span class="application__link-text">Pobierz z Google Play</span>
                 </a>
               </div>
             </div>
             <div class="mobile-screens"></div>
-          </div>
+          </article>
           <div class="description__container">
             <h2 class="description__main-title">
               Sprzątanie mieszkań Warszawa — wybierz profesjonalną usługę dla
@@ -1192,120 +1216,135 @@
           </div>
           <div class="contacts">
             <div class="subscribe-us">
-              <p>Dołącz do nas w mediach społecznościowych!</p>
-              <p>Tam publikujemy <span>najświeższe informacje oraz zniżki i promocje</span></p>
+              <p class="subscribe-us__text">Dołącz do nas w mediach społecznościowych!</p>
+              <p class="subscribe-us__text">Tam publikujemy 
+                <span class="subscribe-us__text_bold">najświeższe informacje oraz zniżki i promocje</span>
+              </p>
             </div>
             <div class="social-services">
-              <svg class="svg-telegram">
-                <use href="#icon-telegram"></use>
-              </svg>
-              <svg class="svg-messenger">
-                <use href="#icon-messenger"></use>
-              </svg>
-              <svg class="svg-instagram">
-                <use href="#icon-instagram"></use>
-              </svg>
+              <a href="#" class="social-services__link">
+                <svg class="svg-telegram">
+                  <use href="#icon-telegram"></use>
+                </svg>
+              </a>
+              <a href="#" class="social-services__link">
+                <svg class="svg-messenger">
+                  <use href="#icon-messenger"></use>
+                </svg>
+              </a>
+              <a href="#" class="social-services__link">
+                <svg class="svg-instagram">
+                  <use href="#icon-instagram"></use>
+                </svg>
+              </a>
             </div>
           </div>
-          <div class="posts__cards">
-            <div class="posts__card card-1">
-              <div class="posts__card-header">
-                <div class="date-view">
-                  <svg class="svg-date-view">
-                    <use href="#icon-date-view"></use>
-                  </svg>
-                  <span>14 stycznia 2024</span>
-                </div>
-                <div class="details">
-                  <div class="details__topic">Czyszczenie obuwia</div>
-                  <div class="details__location">
-                    <svg class="svg-posts-location">
-                      <use href="#icon-posts-location"></use>
+          <div class="posts__wrapper">
+            <div class="posts__cards">
+              <div class="posts__card card-1">
+                <div class="posts__card-header">
+                  <div class="date-view">
+                    <svg class="svg-date-view">
+                      <use href="#icon-date-view"></use>
                     </svg>
-                    <span class="city">Warszawa</span>
+                    <span>14 stycznia 2024</span>
+                  </div>
+                  <div class="details">
+                    <div class="details__topic">Czyszczenie obuwia</div>
+                    <div class="details__location">
+                      <svg class="svg-posts-location">
+                        <use href="#icon-posts-location"></use>
+                      </svg>
+                      <span class="city">Warszawa</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="posts__card-info">
-                <h4 class="posts__card-title">Renowacja skórzanych butów: domowe i fachowe metody️</h4>
-                <p class="posts__card-text">Renowacja skórzanych butów jest kluczowa dla utrzymania ich eleganckiego
-                  wyglądu i długowieczności. Poznaj skuteczne metody, które przywrócą twojemu obuwiu pierwotny blask.</p>
-              </div>
-            </div>
-            <div class="posts__card card-2">
-              <div class="posts__card-header">
-                <div class="date-view">
-                  <svg class="svg-date-view">
-                    <use href="#icon-date-view"></use>
-                  </svg>
-                  <span>14 stycznia 2024</span>
+                <div class="posts__card-info">
+                  <h4 class="posts__card-title">Renowacja skórzanych butów: domowe i fachowe metody️</h4>
+                  <p class="posts__card-text">Renowacja skórzanych butów jest kluczowa dla utrzymania ich eleganckiego
+                    wyglądu i długowieczności. Poznaj skuteczne metody, które przywrócą twojemu obuwiu pierwotny blask.</p>
                 </div>
-                <div class="details">
-                  <div class="details__topic">Czyszczenie obuwia</div>
-                  <div class="details__location">
-                    <svg class="svg-posts-location">
-                      <use href="#icon-posts-location"></use>
+              </div>
+              <div class="posts__card card-2">
+                <div class="posts__card-header">
+                  <div class="date-view">
+                    <svg class="svg-date-view">
+                      <use href="#icon-date-view"></use>
                     </svg>
-                    <span class="city">Warszawa</span>
+                    <span>14 stycznia 2024</span>
+                  </div>
+                  <div class="details">
+                    <div class="details__topic">Czyszczenie obuwia</div>
+                    <div class="details__location">
+                      <svg class="svg-posts-location">
+                        <use href="#icon-posts-location"></use>
+                      </svg>
+                      <span class="city">Warszawa</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="posts__card-info">
-                <h4 class="posts__card-title">Odświeżacz do butów - dokonaj właściwego wyboru️</h4>
-                <p class="posts__card-text">Niezależnie od tego, czy szukasz odświeżacza do butów roboczych, sportowych
-                  czy codziennych, odpowiedni produkt pozwoli cieszyć się świeżością i komfortem noszenia.</p>
-              </div>
-            </div>
-            <div class="posts__card card-3">
-              <div class="posts__card-header">
-                <div class="date-view">
-                  <svg class="svg-date-view">
-                    <use href="#icon-date-view"></use>
-                  </svg>
-                  <span>14 stycznia 2024</span>
+                <div class="posts__card-info">
+                  <h4 class="posts__card-title">Odświeżacz do butów - dokonaj właściwego wyboru️</h4>
+                  <p class="posts__card-text">Niezależnie od tego, czy szukasz odświeżacza do butów roboczych, sportowych
+                    czy codziennych, odpowiedni produkt pozwoli cieszyć się świeżością i komfortem noszenia.</p>
                 </div>
-                <div class="details">
-                  <div class="details__topic">Czyszczenie obuwia</div>
-                  <div class="details__location">
-                    <svg class="svg-posts-location">
-                      <use href="#icon-posts-location"></use>
+              </div>
+              <div class="posts__card card-3">
+                <div class="posts__card-header">
+                  <div class="date-view">
+                    <svg class="svg-date-view">
+                      <use href="#icon-date-view"></use>
                     </svg>
-                    <span class="city">Warszawa</span>
+                    <span>14 stycznia 2024</span>
+                  </div>
+                  <div class="details">
+                    <div class="details__topic">Czyszczenie obuwia</div>
+                    <div class="details__location">
+                      <svg class="svg-posts-location">
+                        <use href="#icon-posts-location"></use>
+                      </svg>
+                      <span class="city">Warszawa</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="posts__card-info">
-                <h4 class="posts__card-title">Jak rozbić skórzane buty oraz inne rodzaje obuwia️</h4>
-                <p class="posts__card-text">Rozciąganie obuwia jest kluczowe, aby zapewnić komfort noszenia i uniknąć
-                  dyskomfortu związanego z ciasnymi butami. Istnieje wiele skutecznych metod, które można zastosować w
-                  zależności od rodzaju obuwia i materiału.</p>
-              </div>
-            </div>
-            <div class="posts__card card-4">
-              <div class="posts__card-header">
-                <div class="date-view">
-                  <svg class="svg-date-view">
-                    <use href="#icon-date-view"></use>
-                  </svg>
-                  <span>14 stycznia 2024</span>
+                <div class="posts__card-info">
+                  <h4 class="posts__card-title">Jak rozbić skórzane buty oraz inne rodzaje obuwia️</h4>
+                  <p class="posts__card-text">Rozciąganie obuwia jest kluczowe, aby zapewnić komfort noszenia i uniknąć
+                    dyskomfortu związanego z ciasnymi butami. Istnieje wiele skutecznych metod, które można zastosować w
+                    zależności od rodzaju obuwia i materiału.</p>
                 </div>
-                <div class="details">
-                  <div class="details__topic">Czyszczenie obuwia</div>
-                  <div class="details__location">
-                    <svg class="svg-posts-location">
-                      <use href="#icon-posts-location"></use>
+              </div>
+              <div class="posts__card card-4">
+                <div class="posts__card-header">
+                  <div class="date-view">
+                    <svg class="svg-date-view">
+                      <use href="#icon-date-view"></use>
                     </svg>
-                    <span class="city">Warszawa</span>
+                    <span>14 stycznia 2024</span>
+                  </div>
+                  <div class="details">
+                    <div class="details__topic">Czyszczenie obuwia</div>
+                    <div class="details__location">
+                      <svg class="svg-posts-location">
+                        <use href="#icon-posts-location"></use>
+                      </svg>
+                      <span class="city">Warszawa</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="posts__card-info">
-                <h4 class="posts__card-title">Dezodorant do butów Rossmann i inne skuteczne produkty️</h4>
-                <p class="posts__card-text">Odświeżanie obuwia to nie tylko kwestia komfortu, ale również higieny i
-                  zdrowia stóp. Regularne stosowanie specjalistycznych produktów pozwala na skuteczne eliminowanie
-                  nieprzyjemnych zapachów.</p>
+                <div class="posts__card-info">
+                  <h4 class="posts__card-title">Dezodorant do butów Rossmann i inne skuteczne produkty️</h4>
+                  <p class="posts__card-text">Odświeżanie obuwia to nie tylko kwestia komfortu, ale również higieny i
+                    zdrowia stóp. Regularne stosowanie specjalistycznych produktów pozwala na skuteczne eliminowanie
+                    nieprzyjemnych zapachów.</p>
+                </div>
               </div>
             </div>
+            <button type="button" class="slider-button-next">
+              <svg class="svg-slider-arrow">
+                <use href="#icon-slider-arrow"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -1371,9 +1410,9 @@
                   <use href="#icon-leather-sofa"></use>
                 </svg>
               </div>
-              <div class="info">
-                <h4>Skórzana kanapa - jak ją czyścić? Czym wyczyścić kanapę materiałową?️</h4>
-                <p>
+              <div class="advice__info">
+                <h4 class="advice__info-title">Skórzana kanapa - jak ją czyścić? Czym wyczyścić kanapę materiałową?️</h4>
+                <p class="advice__info-text">
                   Poznaj sprawdzone metody na to, jak wyprać kanapę, zarówno materiałową, jak i skórzaną. Regularne
                   czyszczenie mebli jest kluczowe.
                 </p>
@@ -1385,9 +1424,9 @@
                   <use href="#icon-sandals"></use>
                 </svg>
               </div>
-              <div class="info">
-                <h4>Jak czyścić klapki Birkenstock? Kompleksowy poradnik️</h4>
-                <p>
+              <div class="advice__info">
+                <h4 class="advice__info-title">Jak czyścić klapki Birkenstock? Kompleksowy poradnik️</h4>
+                <p class="advice__info-text">
                   Jak czyścić Birkenstock? Poznaj najlepsze sposoby w zależności od materiału, z którego są wykonane Twoje
                   buty, czy to skóra.
                 </p>
@@ -1439,7 +1478,7 @@
             <svg class="svg-footer-logo">
               <use href="#icon-footer-logo"></use>
             </svg>
-            <p>
+            <p class="cities-list">
               Działamy w 20 miastach:
               <a href="#" class="city-link">Warszawa</a>,
               <a href="#" class="city-link">Kraków</a>,
